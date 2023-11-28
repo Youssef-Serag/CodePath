@@ -68,3 +68,23 @@
 .main-card:active {
   transform: rotateX(180deg);
 }
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  justify-content: space-between;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #000000;
+  transition: transform 1.5s;
+  margin-right: 10px;
+}

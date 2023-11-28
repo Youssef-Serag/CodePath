@@ -8,15 +8,32 @@ const App = () => {
   // This is the array of dictionaries that we will be using to store our flashcard information.
   let arrayOfObjects = [
     { 'Question': 'What is your name?', "Answer": 'Youssef' },
-    { 'Question': 'What type of plant is there?', "Answer": 'Rose' },
-    { 'Question': 'What is your name?', "Answer": 'Youssef' },
+    { 'Question': 'What is the most common flower in the world?', "Answer": 'Roses' },
+    { 'Question': 'What is a dandelion named after?', "Answer": 'From the French phrase "dents de lion."' },
   ];
 
   // Need to add 2 useState hooks here
+  const [count, setCount] = useState(0);
 
-  // 1. For the next button
+  const nextQuestion = () => {
+    if (count < arrayOfObjects.length - 1) {
+      setCount(count + 1);
+    }
+    else {
+      setCount(0);
+    }
+    setIsFlipped(false);
+  }
 
-  // 2. For the previous button
+  const prevQuestion = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+    else {
+      count(arrayOfObjects.length - 1);
+    }
+    setIsFlipped(false);
+  }
 
   const [isFlipped, setIsFlipped] = useState(false);
   return (
@@ -25,9 +42,13 @@ const App = () => {
         <h1>The Ultimate Plant Parent!</h1>
         <h2>How good of a plant parent are you? Test all of your planty knowledge here!</h2>
         <h4>Count is: {arrayOfObjects.length}</h4>
-        <Card question={arrayOfObjects[0]['Question']} answer={arrayOfObjects[0]['Answer']} isFlipped={isFlipped} setIsFlipped={setIsFlipped} />
+        <Card question={arrayOfObjects[count]['Question']} answer={arrayOfObjects[count]['Answer']} isFlipped={isFlipped} setIsFlipped={setIsFlipped} />
 
         {/* Add the next and previous buttons here */}
+        <div className='button-container'>
+          <button onClick={prevQuestion} className='button'>⬅</button>
+          <button onClick={nextQuestion} className='button'>➡️</button>
+        </div>
       </div>
     </div>
   )
