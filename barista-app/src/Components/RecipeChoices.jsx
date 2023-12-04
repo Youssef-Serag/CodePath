@@ -1,5 +1,5 @@
 import React from "react";
-import './BaristaForm.css';
+import '../App.css';
 
 const RecipeChoices = ({handleChange, label, choices, checked}) => {
     return (
