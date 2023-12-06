@@ -15,6 +15,21 @@ const App = () => {
   // Need to add 2 useState hooks here
   const [count, setCount] = useState(0);
 
+  const [inp, setInp] = useState('');
+
+  const [shade, setShade] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (inp === arrayOfObjects[count]['Answer']) {
+      setShade('correct');
+      setInp('');
+    }
+    else {
+      setShade('incorrect');
+      setInp('');
+    }
+  };
+
   const nextQuestion = () => {
     if (count < arrayOfObjects.length - 1) {
       setCount(count + 1);
@@ -23,6 +38,7 @@ const App = () => {
       setCount(0);
     }
     setIsFlipped(false);
+    setShade('');
   }
 
   const prevQuestion = () => {
@@ -33,6 +49,7 @@ const App = () => {
       count(arrayOfObjects.length - 1);
     }
     setIsFlipped(false);
+    setShade('');
   }
 
   const [isFlipped, setIsFlipped] = useState(false);
@@ -45,6 +62,12 @@ const App = () => {
         <Card question={arrayOfObjects[count]['Question']} answer={arrayOfObjects[count]['Answer']} isFlipped={isFlipped} setIsFlipped={setIsFlipped} />
 
         {/* Add the next and previous buttons here */}
+        <form className='input-container' onSubmit={handleSubmit}>
+          <h4>Guess the answer here:</h4>
+          <input type='text' value={inp} onChange={(e) => setInp(e.target.value)} id={shade}/>
+          <button type='submit'>Submit your answer</button>
+        </form>
+
         <div className='button-container'>
           <button onClick={prevQuestion} className='button'>⬅</button>
           <button onClick={nextQuestion} className='button'>➡️</button>

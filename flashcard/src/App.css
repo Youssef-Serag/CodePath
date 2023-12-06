@@ -88,3 +88,18 @@
   transition: transform 1.5s;
   margin-right: 10px;
 }
+
+.input-container {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+#correct {
+  background-color: #00ff00;
+}
+
+#incorrect {
+  background-color: #ff0000;
+}
