@@ -18,14 +18,26 @@
   justify-content: center;
   padding-bottom: 30px;
   margin: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-img {
-  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
 }
 
 .card-h4 {
   color: #000;
+}
+
+.card-h3 {
+  color: #000;
+  font-size: 20px;
+  margin-top: 200px;
 }
 
 .App {
@@ -40,5 +52,28 @@
   align-items: center;
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+}
+
+.text-holder {
+  display: inline-block; /* This will make the element only as wide as its content */
+  padding: 20px 0; /* This will add 20px padding on top and bottom, and no padding on the sides */
+  text-align: center;
+}
+
+.blue-button {
+  background-color: blue; /* This sets the background color of the button to blue */
+  color: white; /* This sets the text color of the button to white */
+  border: none; /* This removes the default button border */
+  padding: 10px 20px; /* This adds some padding to the button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.banner {
+  position: relative;
+  padding-bottom: 20px;
 }
