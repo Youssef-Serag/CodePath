@@ -8,3 +8,7 @@ This project is a simple food truck website where you are able to look at 10 dif
 
 - [x] Unique theme for a specific community
 - [x] Display at least 10 unique resources or events in a responsive card format
+
+## GIF
+
+![](src/gif/Animation.gif)
