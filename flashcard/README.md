@@ -1,8 +1,17 @@
-# React + Vite
+# Project 2: Flashcard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a simple flashcard application that displays a list of resources and events for flower enthusiasts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Required features
+
+- [x] The title of the card set and some information about it, such as a short description and the total number of cards are displayed.
+- [x] A single card at a time is displayed, only showing one of the components of the information pair.
+- [x] Create a list of card pairs (an array of dictionaries where each dictionary contains the question and answer is perfectly fine).
+- [x] Clicking on the card shows the corresponding component of the information pair.
+- [x] Clicking the next button displays a random new card.
+
+## GIF
+
+![](src/gif/submission.gif)
