@@ -16,7 +16,7 @@ const CoinInfo = ({ image, name, symbol }) => {
 
   return (
     <div>
-      {price ? ( // rendering only if API call actually returned us data
+      {price ? (
         <li className="main-list" key={symbol}>
           <img
             className="icons"
