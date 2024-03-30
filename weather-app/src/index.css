@@ -66,3 +66,65 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.card {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* White text color */
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+  width: 150px; /* Fixed width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow similar to the image */
+}
+
+.card-number {
+  font-size: 2rem; /* Large font size for the number */
+  margin-bottom: 0.5rem; /* Space between the number and the text */
+}
+
+.card-text {
+  font-size: 1rem; /* Smaller font size for the text */
+  text-transform: uppercase; /* Uppercase for the text */
+}
+
+.horizontal-stack {
+  display: flex; /* Establishes a flex container */
+  flex-direction: row; /* Stacks child elements horizontally */
+  align-items: center; /* Centers items vertically */
+  justify-content: flex-start; /* Aligns items to the start of the container */
+  overflow-x: auto; /* Allows horizontal scrolling if child elements overflow */
+  white-space: nowrap; /* Prevents wrapping of child elements */
+}
+
+.horizontal-stack > div {
+  margin-right: 10px; /* Adds spacing between child divs, adjust as needed */
+  /* Other styles for the child divs can go here */
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px; /* Space between entries */
+  border-radius: 10px; /* Rounded corners like in the image */
+  backdrop-filter: blur(5px); /* Blur effect for the background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for definition */
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  flex-basis: 20%; /* Gives each column an equal width */
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+}
