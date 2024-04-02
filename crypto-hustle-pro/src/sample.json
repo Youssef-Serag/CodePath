@@ -1,0 +1,74 @@
+{
+  "Response": "Success",
+  "Message": "Coin list succesfully returned!",
+  "Data": {
+    "42": {
+      "Id": "4321",
+      "Url": "/coins/42/overview",
+      "ImageUrl": "/media/35650717/42.jpg",
+      "ContentCreatedOn": 1427211129,
+      "Name": "42",
+      "Symbol": "42",
+      "CoinName": "42 Coin",
+      "FullName": "42 Coin (42)",
+      "Description": "Everything about 42 coin is 42 - apart from the transaction fees and difficulty retargetting - 0.00000001 and 7.5mins. A scrypt coin with 42 coins max, a 42 second block time, with superblocks giving 10 times the standard block reward of 0.0000420 42&#39;s.42 coin is a cryptocurrency with completed emission, fair distribution (no ICO, premine or instamine) and both private and public transaction support. The maximum supply of 42 coins makes the remaining 41.99 extremely rare. The innovative deflationary model provides a constant rise in incentives both for miners and long term investors. 42-coin delivers a hybrid of Proof-of-Work and Proof-of-Stake transaction confirmation methods and represents a new way of securing the network against 51% attacks.",
+      "AssetTokenStatus": "N/A",
+      "Algorithm": "Scrypt",
+      "ProofType": "PoW/PoS",
+      "SortOrder": "34",
+      "Sponsored": false,
+      "Taxonomy": {
+        "Access": "",
+        "FCA": "",
+        "FINMA": "",
+        "Industry": "",
+        "CollateralizedAsset": "",
+        "CollateralizedAssetType": "",
+        "CollateralType": "",
+        "CollateralInfo": ""
+      },
+      "Rating": {
+        "Weiss": {
+          "Rating": "",
+          "TechnologyAdoptionRating": "",
+          "MarketPerformanceRating": ""
+        }
+      },
+      "IsTrading": false
+    },
+    "BTC": {
+      "Id": "1182",
+      "Url": "/coins/btc/overview",
+      "ImageUrl": "/media/37746251/btc.png",
+      "ContentCreatedOn": 1417635237,
+      "Name": "BTC",
+      "Symbol": "BTC",
+      "CoinName": "Bitcoin",
+      "FullName": "Bitcoin (BTC)",
+      "Description": "What is Bitcoin?Bitcoin (BTC) is the first successful decentralized cryptocurrency. It uses peer-to-peer technology to operate without the need for a central authority behind it. Bitcoin transactions are registered on open-source software.Bitcoin uses blockchain technology to ensure transactions are secure and censorship-resistance. A blockchain is a distributed ledger, or a shared database that, in BTC’s case, anyone can access to verify transactions.While anyone can access these transactions, Bitcoin works through pseudonymous addresses. This means that while anyone can see the transaction occurred – meaning address A sent BTC to address B – often only the sender and receiver know who’s behind each address.Blockchains are essentially built through blocks of data chained together – forming a chain of blocks – with each new block building on the previous one. Transactions are verified by validators, which on the Bitcoin network are called miners. These use specialized hardware to “mine” blocks and add them to the blockchain by solving complex mathematical problems.Miners are rewarded through a set BTC reward included in each block, called the coinbase reward, and with the transaction fees attached to the transactions included in the blocks they mine. Data stored in blocks is encrypted through Bitcoin’s SHA-256 hashing algorithm.Bitcoin’s supply is limited to 21 million coins, and each block is added to the network every 10 minutes. The timing of each block is kept stable through a difficulty adjustment mechanism, while BTC’s inflation is controlled by code, with the reward in each block halving every 210,000, or roughly every four years.Each Bitcoin is divisible to eight decimal places, with the smallest unit being known as a satoshi – one satoshi is 0.00000001 BTC. The cryptocurrency could be made divisible into even more decimal places in the future.Who Created Bitcoin?Bitcoin was created by Satoshi Nakamoto, a pseudonymous entity who built upon previous work to outline the technology behind the cryptocurrency in a 2008 white paper titled: \"Bitcoin: A Peer-to-Peer Electronic Cash System.”It’s known that Nakamoto registered the Bitcoin.org domain in August 2008, before announcing the whitepaper to a Cryptography Mailing List in October of that year.Bitcoin’s first block – the genesis block – was mined on January 3, 2009. Nakamoto added to it the text: “The Times 03/Jan/2009 Chancellor on brink of second bailout for banks,” as a reference to the 2008 financial crisis and central banks’ response to it.The first Bitcoin transaction was made on January 12, involving Nakamoto and Hal Finney, a cypherpunk that worked with the PGP Corporation developing a leading encryption product.How Do You Use Bitcoin?Bitcoin was initially designed as a peer-to-peer payment method. As interest around it grew and its value increased, its use cases grew as well. Because of Bitcoin’s open-source approach, competition from other cryptocurrencies grew as well.To use Bitcoin, a wallet is necessary. Bitcoin wallets work as digital “bank accounts” that can only be controlled by the entity behind them. When a wallet is created, two keys are generated: a public and a private key.    Public keys are addresses used to send and receive payments. They’re akin to a bank account number.    Private keys are akin to the password protecting a bank account, and anyone who controls the private key to a wallet controls the wallet. As there is no central authority on the Bitcoin network, if a private key is lost, the coins on that wallet are lost.Bitcoin is used for a number of purposes. Some people use it for everyday transactions, while others prefer to use BTC as a store of value, making it an alternative to gold. Others simply invest, trade, and speculate using the cryptocurrency.Why Does Bitcoin Have Value?Bitcoin’s high value is determined by a number of factors. The cryptocurrency was the first to solve the Byzantine Generals’ problem, bringing trust to a decentralized system. As the system is decentralized and is governed by code, its fixed and predictable monetary policy cannot be changed unless there’s consensus to do so.Bitcoin uses open-source code and is built on top of a transparent network, making it possible for anyone to independently verify its security, its activity, and the balances of specific accounts on the blockchain.Miners use tremendous amounts of energy to support Bitcoin’s encrypted network, forcing potential attackers to require impossible amounts of energy to do anything to it. The network’s uptime since inception is above 99.987%, making it more reliable than traditional payments networks.Moreover, anyone can create a Bitcoin wallet and start using the network, making it open to anyone in the world regardless of their financial conditions. Bitcoin is an unencodable network that allows for fast peer-to-peer transactions throughout the world at low transaction fees.While no single entity controls Bitcoin, everyone can participate in the project by creating new businesses around it, helping develop it, mining it, running a node to help secure and relay transactions, documenting its history, using BTC, or simply talking about it.Bitcoin Whitepaper PDF - A Peer-to-Peer Electronic Cash SystemBlockchain data provided by: Blockchain (main source), Blockchair (backup)",
+      "AssetTokenStatus": "N/A",
+      "Algorithm": "SHA-256",
+      "ProofType": "PoW",
+      "SortOrder": "1",
+      "Sponsored": false,
+      "Taxonomy": {
+        "Access": "Permissionless",
+        "FCA": "Exchange",
+        "FINMA": "Payment",
+        "Industry": "Financial and Insurance Activities",
+        "CollateralizedAsset": "No",
+        "CollateralizedAssetType": "",
+        "CollateralType": "",
+        "CollateralInfo": ""
+      },
+      "Rating": {
+        "Weiss": {
+          "Rating": "B+",
+          "TechnologyAdoptionRating": "A-",
+          "MarketPerformanceRating": "D"
+        }
+      },
+      "IsTrading": true
+    }
+  }
+}
