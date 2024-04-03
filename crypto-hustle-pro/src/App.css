@@ -93,3 +93,8 @@ nav {
   /* height: 100vh; Adjust or remove the height as needed */
   margin-top: 40px;
 }
+
+.black-bold {
+  color: black;
+  font-weight: bold;
+}

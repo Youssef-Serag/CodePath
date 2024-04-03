@@ -4,6 +4,8 @@ const API_KEY = import.meta.env.VITE_APP_API_KEY;
 import CoinChart from "./CoinChart";
 import "../App.css";
 import { Modal, Box, Button } from "@mui/material";
+import { IconButton } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
 const CoinDetail = () => {
   let params = useParams();
@@ -23,8 +25,9 @@ const CoinDetail = () => {
     maxWidth: "90vw", // Prevent the box from being too wide on larger screens
     height: "auto", // Adjust height to fit the content (your chart) + padding
     maxHeight: "90vh", // Prevent the box from being too tall on larger screens
-    bgcolor: "background.paper",
-    border: "2px solid #000",
+    bgcolor: "black", // Dark mode background color
+    color: "white", // Ensures text inside the box is white
+    border: "2px solid white", // White outline
     boxShadow: 24,
     p: 4, // Padding around the content inside the Box
     overflow: "auto", // In case the content overflows, add a scrollbar
@@ -202,7 +205,9 @@ const CoinDetail = () => {
               </tbody>
             </table>
           </div>
-          <Button onClick={handleOpen}>Show Chart</Button>
+          <Button variant="contained" onClick={handleOpen} sx={{ mt: 5 }}>
+            Show Chart
+          </Button>
           <Modal
             open={open}
             onClose={handleClose}
@@ -210,6 +215,18 @@ const CoinDetail = () => {
             aria-describedby="modal-modal-description"
           >
             <Box sx={style}>
+              <IconButton
+                aria-label="close"
+                onClick={handleClose}
+                sx={{
+                  position: "absolute",
+                  right: 8,
+                  top: 8,
+                  color: (theme) => theme.palette.grey[500],
+                }}
+              >
+                <CloseIcon />
+              </IconButton>
               <CoinChart
                 symbol={params.symbol}
                 market={fullDetails.numbers[params.symbol].USD.MARKET}
