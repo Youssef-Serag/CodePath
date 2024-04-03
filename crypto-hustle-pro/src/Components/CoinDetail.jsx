@@ -3,10 +3,33 @@ import { useParams } from "react-router-dom";
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 import CoinChart from "./CoinChart";
 import "../App.css";
+import { Modal, Box, Button } from "@mui/material";
 
 const CoinDetail = () => {
   let params = useParams();
   const [fullDetails, setFullDetails] = useState(null);
+
+  const [open, setOpen] = useState(false); // State for controlling modal visibility
+
+  const handleOpen = () => setOpen(true); // Function to open the modal
+  const handleClose = () => setOpen(false); // Function to close the modal
+
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "auto", // Adjust width to fit the content (your chart) + padding
+    maxWidth: "90vw", // Prevent the box from being too wide on larger screens
+    height: "auto", // Adjust height to fit the content (your chart) + padding
+    maxHeight: "90vh", // Prevent the box from being too tall on larger screens
+    bgcolor: "background.paper",
+    border: "2px solid #000",
+    boxShadow: 24,
+    p: 4, // Padding around the content inside the Box
+    overflow: "auto", // In case the content overflows, add a scrollbar
+  };
+
   useEffect(() => {
     const getCoinDetail = async () => {
       const details = await fetch(
@@ -179,10 +202,20 @@ const CoinDetail = () => {
               </tbody>
             </table>
           </div>
-          <CoinChart
-            symbol={params.symbol}
-            market={fullDetails.numbers[params.symbol].USD.MARKET}
-          />
+          <Button onClick={handleOpen}>Show Chart</Button>
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <Box sx={style}>
+              <CoinChart
+                symbol={params.symbol}
+                market={fullDetails.numbers[params.symbol].USD.MARKET}
+              />
+            </Box>
+          </Modal>
         </>
       ) : (
         <p>Loading...</p>
