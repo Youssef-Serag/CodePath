@@ -21,7 +21,6 @@ import {
 
 const CoinChart = ({ symbol, market }) => {
   const [histData, setHistData] = useState(null);
-  const [displayDataOption, setDisplayDataOption] = useState("open");
   const [checkedState, setCheckedState] = useState({
     open: true,
     high: false,
@@ -69,10 +68,6 @@ const CoinChart = ({ symbol, market }) => {
     return [];
   }, [histData]);
 
-  const handleRadioChange = (event) => {
-    setDisplayDataOption(event.target.value);
-  };
-
   return (
     <div>
       {histData ? (
@@ -82,6 +77,7 @@ const CoinChart = ({ symbol, market }) => {
               Display Data
             </FormLabel>
             <FormControlLabel
+              id="open-checkbox"
               control={
                 <Checkbox
                   checked={checkedState.open}
@@ -94,6 +90,7 @@ const CoinChart = ({ symbol, market }) => {
               sx={{ color: "white" }}
             />
             <FormControlLabel
+              id="high-checkbox"
               control={
                 <Checkbox
                   checked={checkedState.high}
@@ -106,6 +103,7 @@ const CoinChart = ({ symbol, market }) => {
               sx={{ color: "white" }}
             />
             <FormControlLabel
+              id="low-checkbox"
               control={
                 <Checkbox
                   checked={checkedState.low}
