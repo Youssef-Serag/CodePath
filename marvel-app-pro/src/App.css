@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.entry.header {
+  font-weight: bold; /* Make header text bold */
+  font-size: 1.2em; /* Increase font size */
+  background-color: #040404; /* Light background for the header */
+  padding: 15px 10px; /* Add padding inside the header for spacing */
+  border-bottom: 2px solid #ccc; /* Adds a separator between the header and entries */
+}
+
+/* Assuming your CSS file is imported at the top of your component file */
+.form-container form {
+  margin: 20px 0; /* Adds margin above and below the form */
+  display: flex; /* Uses flexbox to layout children inline */
+  gap: 10px; /* Adds space between children (input fields and button) */
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: center; /* Centers the items horizontally */
+}
+
+.input-field {
+  flex: 1; /* Allows input fields to grow and take up equal space */
+}
+
+.search-button {
+  padding: 8px 16px; /* Adds padding inside the button for better touch target */
+  cursor: pointer; /* Changes the cursor to indicate the button is clickable */
+  background-color: #007bff; /* Example button color */
+  color: white; /* Text color for the button */
+  border: none; /* Removes the default border */
+  border-radius: 4px; /* Adds rounded corners to the button */
+}
+
+/* Adds custom focus styles to improve accessibility */
+.input-field:focus,
+.search-button:focus {
+  outline: 2px solid #0056b3; /* Adds a blue outline on focus */
+  outline-offset: 2px; /* Adds space between the outline and the element */
+}
+
+.horizontal-stack {
+  display: flex; /* Establishes a flex container */
+  width: 100%; /* Ensures the container takes the full width */
+}
+
+.horizontal-stack > div {
+  flex-grow: 1; /* Allows each child div to grow and fill available space */
+  margin-right: 10px; /* Adds spacing between child divs, adjust as needed */
+  /* To ensure the last div doesn't have a margin-right */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Optional: Remove margin-right for the last child div */
+.horizontal-stack > div:last-child {
+  margin-right: 0;
+}
