@@ -92,6 +92,7 @@ const CoinDetail = () => {
                   <th>Website </th>
                   <td>
                     <a
+                      id="website-link"
                       href={fullDetails.textData[params.symbol].AssetWebsiteUrl}
                       target="_blank"
                       rel="noopener noreferrer"
