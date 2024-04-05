@@ -131,28 +131,13 @@ const CoinChart = ({ symbol, market }) => {
             }}
           >
             {checkedState.open && (
-              <Line
-                type="monotone"
-                dataKey="open"
-                stroke="#8884d8"
-                // Your Line component props
-              />
+              <Line type="monotone" dataKey="open" stroke="#8884d8" />
             )}
             {checkedState.high && (
-              <Line
-                type="monotone"
-                dataKey="high"
-                stroke="#82ca9d"
-                // Your Line component props
-              />
+              <Line type="monotone" dataKey="high" stroke="#82ca9d" />
             )}
             {checkedState.low && (
-              <Line
-                type="monotone"
-                dataKey="low"
-                stroke="#ff7300"
-                // Your Line component props
-              />
+              <Line type="monotone" dataKey="low" stroke="#ff7300" />
             )}
             <CartesianGrid strokeDasharray="5 5" />
             <XAxis dataKey="time" interval={2} angle={20} dx={20}>

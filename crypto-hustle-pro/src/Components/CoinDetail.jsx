@@ -21,16 +21,16 @@ const CoinDetail = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "auto", // Adjust width to fit the content (your chart) + padding
-    maxWidth: "90vw", // Prevent the box from being too wide on larger screens
-    height: "auto", // Adjust height to fit the content (your chart) + padding
-    maxHeight: "90vh", // Prevent the box from being too tall on larger screens
-    bgcolor: "black", // Dark mode background color
-    color: "white", // Ensures text inside the box is white
-    border: "2px solid white", // White outline
+    width: "auto",
+    maxWidth: "90vw",
+    height: "auto",
+    maxHeight: "90vh",
+    bgcolor: "black",
+    color: "white",
+    border: "2px solid white",
     boxShadow: 24,
-    p: 4, // Padding around the content inside the Box
-    overflow: "auto", // In case the content overflows, add a scrollbar
+    p: 4,
+    overflow: "auto",
   };
 
   useEffect(() => {
