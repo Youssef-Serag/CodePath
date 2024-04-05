@@ -128,3 +128,8 @@ button:focus-visible {
   max-width: 100%;
   height: auto;
 }
+
+.images {
+  width: 200px; /* Adjust this value to make the image smaller or larger */
+  height: auto; /* This ensures the aspect ratio is maintained */
+}

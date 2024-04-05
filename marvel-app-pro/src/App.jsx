@@ -127,7 +127,8 @@ function App() {
         {searchInitiated
           ? filteredResults.map((avenger) => (
               <Entry
-                key={avenger.id} // Use avenger.id as a unique key for each item
+                key={avenger.id}
+                id={avenger.id}
                 name={avenger.name} // Use the name property from the avenger object
                 thumbnail={avenger.thumbnail.path} // Create the full image URL
                 imageExtension="jpg" // Hard-coded extension
@@ -139,6 +140,7 @@ function App() {
             list.data.results.map((avenger) => (
               <Entry
                 key={avenger.id} // Use avenger.id as a unique key for each item
+                id={avenger.id}
                 name={avenger.name} // Use the name property from the avenger object
                 thumbnail={avenger.thumbnail.path} // Create the full image URL
                 imageExtension="jpg" // Hard-coded extension
