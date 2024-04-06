@@ -1,4 +1,4 @@
-# Project 5: Data Dashboard Part 1
+# Project 6: Data Dashboard Part 2
 
 ## Description
 
@@ -6,26 +6,14 @@ Data can tell interesting stories. In this two-part project, you will create a d
 
 ## Required features
 
-- [x] List of Data
+- [x] Add Data Visualizations
 
-  - The site displays a list of data fetched using an API call
-  - Use the useEffect React hook and async/await syntax
+  - The app includes at least one unique chart developed using the fetched data that tell an interesting story
 
-- [x] 3 Summary Data Statistics
-
-  - The app dashboard includes at least three summary statistics about the data, such as:
-    - the total number of items in the dataset or which meet certain criteria in the dataset
-    - the mean, median, mode, or other statistic of a certain aspect of the data
-    - quartiles, quintiles, or ranges of the data
-
-- [x] Search Data
-
-  - A search bar allows the user to search for an item in the fetched data
-
-- [x] Filter Data
-
-  - Multiple different filters (2+) allow the user to filter items in the database by specified categories
+- [x] Add Links to Detail View
+  - Clicking on an item in the list view displays more details about it
+  - Each detail view of an item has a direct, unique link to that item’s detail view page
 
 ## GIF
 
-![](Gifs/Submission.gif)
+![](Gifs/SubmissionFinal.gif)
