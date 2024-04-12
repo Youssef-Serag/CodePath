@@ -21,8 +21,7 @@ const Card = (props) => {
         <img className="moreButton" alt="edit button" src={more} />
       </Link>
       <h2 className="title">{props.title}</h2>
-      <h3 className="author">{"by " + props.author}</h3>
-      <p className="description">{props.description}</p>
+      <Link to={"view/" + props.id}>View Details</Link>
     </div>
   );
 };
