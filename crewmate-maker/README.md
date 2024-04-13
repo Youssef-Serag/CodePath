@@ -1,8 +1,19 @@
-# React + Vite
+# Project 7: Crewmates
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is about setting up a backend using Supabase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Required features
+
+- [x] A create form allows users to add new crewmates
+  - Users can name the crewmate
+  - Users can set the crewmate’s attributes by clicking on one of several values
+- [x] The site displays a summary page of all the user’s added crewmates
+- [x] A previously created crewmate can be updated from the crewmate list
+- [x] A previously created crewmate can be deleted from the crewmate list
+- [x] Each crewmate has a direct, unique link to an info page about them
+
+## GIF
+
+![](src/Gifs/Submission.gif)
