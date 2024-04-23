@@ -1,0 +1,52 @@
+/* Apply to the entire page for reset purposes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%; /* full width */
+  background-color: #333; /* dark background */
+  color: white;
+  position: fixed; /* fixed at the top */
+  top: 0; /* align to the top */
+  z-index: 1000; /* ensure it's above other content */
+}
+
+nav ul {
+  list-style-type: none; /* no bullet points */
+  display: flex; /* align list items in a row */
+  justify-content: space-between; /* spread out the links */
+  padding: 1em; /* some padding around nav items */
+}
+
+nav input[type="text"] {
+  padding: 0.5em; /* padding inside the search box */
+  border: none;
+  border-radius: 5px; /* rounded corners for the input field */
+}
+
+nav button {
+  padding: 0.5em 1em; /* vertical and horizontal padding */
+  margin-left: 10px; /* space between buttons */
+  border: none;
+  background-color: #555; /* slightly lighter than nav background for contrast */
+  color: white;
+  border-radius: 5px; /* rounded corners for the buttons */
+  cursor: pointer; /* indicates clickable */
+}
+
+nav button:hover {
+  background-color: #666; /* hover effect for buttons */
+}
+
+/* Optional: a class for active link styling */
+.active-link {
+  border-bottom: 2px solid white;
+}
+
+/* If you have additional content, this padding-top ensures it doesn't hide under the fixed navbar */
+body {
+  padding-top: 60px; /* height of your navbar + some extra space */
+}
