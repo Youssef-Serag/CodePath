@@ -45,7 +45,9 @@ There was no video created, as I did not finish the project
 
 <!-- Replace this with whatever GIF tool you used! -->
 
-GIF created with ...
+![](src/gifs/Submission.gif)
+
+GIF created with ScreenToGif
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
